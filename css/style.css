@@ -1,0 +1,226 @@
+* {
+    box-sizing: border-box;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+form {
+    margin-left: 10px;
+}
+.tittle {
+    font-size: 32px;
+    color: #000000;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    margin: 52px auto 50px;
+}
+.form-box {
+    margin-bottom: 35px;
+}
+.label-box {
+    display: block;
+    font-size: 20px;
+    color: #000000;
+    font-weight: 400;
+    margin-bottom: 14px;
+    font-family: 'Roboto', sans-serif;
+}
+.field {
+    width: 800px;
+    height: 60px;
+    border-radius: 8px;
+    background: #e6e6e6;
+    border: 2px solid #808080;
+    padding: 5px 20px 5px;
+    outline: none;
+    font-size: 24px;
+}
+.form-select {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 40px;
+}
+.form-select:after {
+    content: url('data:image/svg+xml,%3Csvg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17" width="19" height="17"%3E%3Cstyle%3E.a%7Bfill:%23808080;stroke:%23808080;stroke-width:2%7D%3C/style%3E%3Cpath class="a" d="m7.1 1.4h5 5l-7.5 13-7.5-13h5z"/%3E%3C/svg%3E');
+    position: absolute;
+    top: 22px;
+    right: 20px;
+}
+select {
+    appearance: none;
+}
+input[type="radio"] {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+}
+[type="radio"] + label {
+    position: relative;
+    padding-left: 43px;
+    line-height: 32px;
+    display: inline-block;
+    font-size: 20px;
+    color: #000000;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+}
+[type="radio"] + label:before{
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #e6e6e6;
+    border: 2px solid #808080;
+}
+[type="radio"] + label:after {
+    content: '';
+    width: 18px;
+    height: 18px;
+    background-color: #808080;
+    border: 0 solid #808080;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    border-radius: 50%;
+    opacity: 0;
+}
+[type="radio"]:checked + label:after {
+    opacity: 1;
+    transform: scale(1);
+}
+.label-radio {
+    font-size: 24px;
+    color: #000000;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 26px;
+}
+.radio1 {
+    margin-bottom: 10px;
+}
+.radio-area {
+    margin: 0 0 40px -2px;
+}
+.field-comment {
+    width: 800px;
+    height: 100px;
+    border-radius: 8px;
+    background-color: #e6e6e6;
+    border: 2px solid #808080;
+    font-size: 24px;
+}
+.comment-box {
+     margin-bottom: 20px;
+}
+.checkbox {
+    width: 0;
+    height: 0;
+    position: absolute;
+}
+.checkbox + label {
+    position: relative;    
+    font-size: 20px;
+    color: #000000;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    line-height: 30px;
+    cursor: pointer;
+}
+.checkbox + label:before {
+    content: '';
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    background-color: #e6e6e6;
+    border: 2px solid #808080;
+    margin-right: 11px;
+}
+.checkbox:checked + label:before {
+    content: "✓";
+    background: #e6e6e6;
+    text-align: center;
+    color: #808080;
+    font-size: 30px;
+    font-weight: 700;
+}
+.custom-checkbox {
+    margin-bottom: 43px;
+}
+a[href="#"] {
+    text-decoration: none;
+    color: #25256e;
+}
+.btn {
+    display: inline-block;
+    vertical-align: center;
+    margin-bottom: 78px;
+}
+.btn-form {
+    width: 360px;
+    height: 75px;
+    border-radius: 8px;
+    border: 0 solid #e6e6e6;
+    font-size: 24px;
+    color: #808080;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    cursor: pointer;
+    padding: 10px;
+}
+.submit {
+    background-color: #000000;
+    color: #ffffff;
+    margin-left: 80px;
+}
+.btn-form:hover {
+    background:#C0C0C0;
+}
